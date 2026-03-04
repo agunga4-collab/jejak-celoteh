@@ -2,7 +2,7 @@
 import { GoogleGenAI, Type } from "@google/genai";
 import { GeneratedAnecdote } from "./types";
 
-const API_KEY = process.env.API_KEY || "";
+const API_KEY = import.meta.env.VITE_GEMINI_API_KEY || "";
 
 const SYSTEM_INSTRUCTION = `Anda adalah pakar psikologi anak dan asisten guru SD Kelas 1.
 Tugas Anda:
